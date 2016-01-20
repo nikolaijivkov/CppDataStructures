@@ -58,7 +58,7 @@ public:
 
 
 template <class T>
-class StackStatic{  // Stack with Static C Array
+class StackStatic{  // Stack with Expandable C Array
 private:
     bool debug = true;
     int length = 0;
@@ -67,13 +67,13 @@ private:
 public:
     StackStatic()
     {
-        if(debug) cout << "constructing empty Stack (Static C Array implementation)" << endl;
+        if(debug) cout << "constructing empty Stack (Expandable C Array implementation)" << endl;
         data = new T[arr_length];
     };
 
     ~StackStatic()
     {
-        if(debug) cout << "destructing Stack (Static C Array implementation)" << endl;
+        if(debug) cout << "destructing Stack (Expandable C Array implementation)" << endl;
         delete[] data;
     };
 

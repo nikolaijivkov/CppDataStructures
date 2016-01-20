@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-//    {   // Linked List exercise
+//    {   // Linked List example
 //        List<int> my_list;
 //        my_list.push_back(3);   // 3
 //        my_list.push_back(5);   // 3,5
@@ -27,7 +27,7 @@ int main()
 //        cout << "size: " << my_list.size() << endl;
 //    }
 
-//    {
+//    {   // Stack(LinkedList container) example
 //        Stack<int> my_stack;
 //        my_stack.push(1);
 //        my_stack.push(3);
@@ -40,8 +40,8 @@ int main()
 //        cout << endl;
 //    }
 
-    {
-        StackStatic<int> my_static_stack;  // data array size: 4
+    {   // Stack(expandable C array container) example
+        StackStatic<int> my_static_stack;  // data array initial size: 4
         my_static_stack.push(1);
         my_static_stack.push(3);
         my_static_stack.push(5);
