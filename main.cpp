@@ -1,8 +1,12 @@
 #include <iostream>
 #include <memory>
 #include <algorithm>
+//#include <list>
+//#include <stack>
+//#include <queue>
 #include "list.h"
 #include "stack.h"
+#include "queue.h"
 
 using namespace std;
 
@@ -40,24 +44,39 @@ int main()
 //        cout << endl;
 //    }
 
-    {   // Stack(expandable C array container) example
-        StackStatic<int> my_static_stack;  // data array initial size: 4
-        my_static_stack.push(1);
-        my_static_stack.push(3);
-        my_static_stack.push(5);
-        my_static_stack.push(7);
-        my_static_stack.push(9);  // <- data array doubles in size: 8
-        my_static_stack.push(11);
-        my_static_stack.push(13);
-        my_static_stack.push(15);
-        my_static_stack.push(17);  // <- data array doubles in size: 16
-        my_static_stack.push(19);
+//    {   // Stack(expandable C array container) example
+//        StackStatic<int> my_static_stack;  // data array initial size: 4
+//        my_static_stack.push(1);
+//        my_static_stack.push(3);
+//        my_static_stack.push(5);
+//        my_static_stack.push(7);
+//        my_static_stack.push(9);  // <- data array doubles in size: 8
+//        my_static_stack.push(11);
+//        my_static_stack.push(13);
+//        my_static_stack.push(15);
+//        my_static_stack.push(17);  // <- data array doubles in size: 16
+//        my_static_stack.push(19);
+//
+//        while(!my_static_stack.empty()){
+//            cout << my_static_stack.top() << endl;
+//            my_static_stack.pop();
+//        }
+//        cout << endl;
+//    }
 
-        while(!my_static_stack.empty()){
-            cout << my_static_stack.top() << endl;
-            my_static_stack.pop();
-        }
-        cout << endl;
+    {
+        // Queue(LinkedList container) example
+        Queue<int> my_queue;
+
+        my_queue.push(1);
+        my_queue.push(3);
+        my_queue.push(2);
+        my_queue.push(5);
+        my_queue.push(4);
+
+        my_queue.pop();
+        cout << my_queue.front() << endl;
+        cout << my_queue.back() << endl;
     }
 
     //cin.get();
