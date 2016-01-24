@@ -27,4 +27,6 @@ public:
         if(debug) cout << "destructing Node with data " << data << endl;
     }
 };
+
+
 #endif //DATASTRUCTURES_NODE_H

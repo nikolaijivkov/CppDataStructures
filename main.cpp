@@ -74,7 +74,7 @@ int main()
     */
 
     // Queue(LinkedList container) example
-    //*
+    /*
     {
         Queue<int> my_queue;
 
@@ -87,6 +87,41 @@ int main()
         my_queue.pop();
         cout << my_queue.front() << endl;
         cout << my_queue.back() << endl;
+    }
+    */
+
+    // Queue(expandable C array container) example
+    //*
+    {
+        QueueStatic<int> my_static_queue;
+
+        my_static_queue.push(1);
+        my_static_queue.push(2);
+        my_static_queue.push(3);
+        my_static_queue.push(4);
+
+        my_static_queue.pop();  // pop-ing 1
+
+        my_static_queue.push(5);
+        my_static_queue.push(6);
+        my_static_queue.push(7);
+        my_static_queue.push(8);
+        my_static_queue.push(9);
+        my_static_queue.push(10);
+
+        my_static_queue.pop(); // pop-ing 2
+
+        my_static_queue.push(11);
+        my_static_queue.push(12);
+        my_static_queue.push(13);
+        my_static_queue.push(14);
+        my_static_queue.push(15);
+        my_static_queue.push(16);
+
+        while(!my_static_queue.empty()){
+            cout << my_static_queue.front() << endl;
+            my_static_queue.pop();
+        }
     }
     //*/
 

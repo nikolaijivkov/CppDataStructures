@@ -118,4 +118,6 @@ public:
         return length == 0;
     }
 };
+
+
 #endif //DATASTRUCTURES_STACK_H
