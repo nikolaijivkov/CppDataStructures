@@ -15,7 +15,7 @@ using namespace std;
 template <class T>
 class Stack{  // Stack with Linked List
 private:
-    bool debug = true;
+    bool debug = false;
     List<T> *data = nullptr;
 public:
     Stack()
@@ -60,7 +60,7 @@ public:
 template <class T>
 class StackStatic{  // Stack with Expandable C Array
 private:
-    bool debug = true;
+    bool debug = false;
     int length = 0;
     int arr_length = 4;
     T *data = nullptr;

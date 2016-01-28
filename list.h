@@ -14,7 +14,7 @@ using namespace std;
 template<class T>
 class List {
 private:
-    bool debug = true;
+    bool debug = false;
     int length = 0;
     Node<T> *pTail = nullptr;  // points to the last inserted element
     Node<T> *pHead = nullptr;  // point to the first inserted element

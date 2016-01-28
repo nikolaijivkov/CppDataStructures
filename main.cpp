@@ -7,6 +7,8 @@
 #include "list.h"
 #include "stack.h"
 #include "queue.h"
+#include "tree.h"
+
 
 using namespace std;
 
@@ -91,7 +93,7 @@ int main()
     */
 
     // Queue(expandable C array container) example
-    //*
+    /*
     {
         QueueStatic<int> my_static_queue;
 
@@ -123,8 +125,28 @@ int main()
             my_static_queue.pop();
         }
     }
-    //*/
+    */
 
-    //cin.get();
-    return 0;
+    // Tree example
+    ///*
+    {
+        Tree<char> my_tree;
+        my_tree.addNode('F');
+        my_tree.addNode('B');
+        my_tree.addNode('G');
+        my_tree.addNode('A');
+        my_tree.addNode('D');
+        my_tree.addNode('C');
+        my_tree.addNode('E');
+        my_tree.addNode('I');
+        my_tree.addNode('H');
+
+        cout << "prefix: "; my_tree.prefixPrintTree(); cout << endl << endl;
+        cout << "infix: "; my_tree.infixPrintTree(); cout << endl << endl;
+        cout << "postfix: "; my_tree.postfixPrintTree(); cout << endl << endl;
+
+    }
+    //*/
+//cin.get();
+return 0;
 }
