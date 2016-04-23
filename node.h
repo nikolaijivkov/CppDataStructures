@@ -28,24 +28,4 @@ public:
     }
 };
 
-
-template<class T>
-class TreeNode {
-public:
-    bool debug = false;
-    T data;
-    TreeNode<T> *pLeft = nullptr;
-    TreeNode<T> *pRight = nullptr;
-
-    TreeNode(T in_data): data(in_data)
-    {
-        if(debug) cout << "constructing new Node with data " << data << endl;
-    }
-
-    ~TreeNode()
-    {
-        if(debug) cout << "destructing Node with data " << data << endl;
-    }
-};
-
 #endif //DATASTRUCTURES_NODE_H
