@@ -6,25 +6,24 @@
 #define DATASTRUCTURES_NODE_H
 
 #include <iostream>
-using namespace std;
-
 
 template<class T>
 class Node {
-public:
+private:
     bool debug = false;
+public:
     T data;
     Node<T> *pNext = nullptr;
     Node<T> *pPrev = nullptr;
 
     Node(T in_data): data(in_data)
     {
-        if(debug) cout << "constructing new Node with data " << data << endl;
+        if(debug) std::cout << "constructing new Node with data " << data << std::endl;
     }
 
     ~Node()
     {
-        if(debug) cout << "destructing Node with data " << data << endl;
+        if(debug) std::cout << "destructing Node with data " << data << std::endl;
     }
 };
 

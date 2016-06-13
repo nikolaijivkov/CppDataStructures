@@ -116,7 +116,7 @@ public:
 
         // how to destroy elements ?!
         // maybe we have to use T **data to point to dynamically newed elements in order to delete them we pop
-//        data[head] = 0;
+        // data[head] = 0;
 
         length--;
         head++;
